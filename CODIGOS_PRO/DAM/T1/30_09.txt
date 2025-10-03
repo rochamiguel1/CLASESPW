@@ -1,0 +1,27 @@
+ 
+INPUTS -> elementos que necesita el algormtimo para poder trabajar (huevo/sarten/aceite) -> parametros
+	PROCESO -> parametros
+OUTPUT -> salidas. Producto final. (huevo frito) -> retorno
+
+
+ALGORITMO -> realizar instrucciones para que la maquina las pueda ejecutar
+
+DIVIDE Y VENCERAS -> problemas pequeños (algoritmos) -> SOLUCION AL PROBLEMA GRANDE
+
+
+PROYECTO JAVA -> INTELLIJ
+	JDK -> LIBRERIAS DE JAVA QUE ME PERMITEN PROGRAMAR
+	.JAR -> LIBRERIAS DE INSTAGRAM PARA UTILIZAR SU FUNCIONALIDAD EN JAVA
+
+PROYECTO JAVA -> MAVEN / GRADLE
+	JDK -> LIBRERIAS DE JAVA QUE ME PERMITEN PROGRAMAR
+	POM.XML / BUILD.GRADLE -> URL -> CONECTARSE CON EL SERVIDOR MAVEN
+
+Elementos basicos dentro de un programa en JAVA
+
+Clase -> Contenedor donde escribiremos nuestros codigos, representar es la estructura basica
+	Los nombres de las clases siempre con la primera en Mayusculas
+		si la clase necesita tener dos palabras PrimeraSegunda
+	Los nombre de las clases SIEMPRE SIEMPRE SIEMPRE en singular
+	Los nombre de las clases tienen que ser representativos
+	Los nombre de las clases no pueden ser palabras reservadas o tipos existentes
