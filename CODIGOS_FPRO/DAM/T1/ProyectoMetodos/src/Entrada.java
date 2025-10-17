@@ -1,4 +1,6 @@
-import model.Operaciones;
+import model.Calculadora;
+
+import java.util.Scanner;
 
 public class Entrada {
 
@@ -14,11 +16,16 @@ public class Entrada {
         saludar(data);
         despedir();*/
         int numero;
-        Operaciones operacionesMatematicas = new Operaciones();
-        operacionesMatematicas.sumar(1, 4);
-        operacionesMatematicas.sumar(2, 4);
-        operacionesMatematicas.restar(8, 5);
-        operacionesMatematicas.restar(8, 9);
+        Calculadora operacionesMatematicas = new Calculadora();
+        // operacionesMatematicas.sumar(1, 4);
+        // operacionesMatematicas.restar(8, 5);
+        // operacionesMatematicas.restar(8, 9);
+        // System.out.println(operacionesMatematicas.multiplicar(7,3)*4); // 21
+        Scanner lectorTeclado = new Scanner(System.in);
+        System.out.println("Que numero quieres validar");
+        int numeroValidar = lectorTeclado.nextInt();
+        System.out.println("El numero que se intenta validar tiene como resultado: "
+                + operacionesMatematicas.validarNumero(numeroValidar));
     }
 
     public static void saludar(String nombre) {

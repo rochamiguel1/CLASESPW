@@ -19,4 +19,8 @@ public class Operaciones {
         return resultado;
     }
 
+    public boolean validarNumero(int numero){
+        return numero>10;
+    }
+
 }
