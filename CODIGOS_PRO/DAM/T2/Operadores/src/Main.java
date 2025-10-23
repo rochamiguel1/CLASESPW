@@ -11,7 +11,7 @@ public class Main {
         // operacionesVariable.operadoresLogicos();
         // Calculadora miCalculadora = new Calculadora();
         // BufferedReader
-        Scanner lectorTeclado = new Scanner(System.in);
+        /*Scanner lectorTeclado = new Scanner(System.in);
         System.out.println("Dime tu nombre y apellido");
         String nombre = lectorTeclado.nextLine();
         System.out.println("Que salario quieres ganar");
@@ -20,6 +20,8 @@ public class Main {
         int edad = lectorTeclado.nextInt();
         System.out.println("Tienes permiso de condicir");
         boolean conducir = lectorTeclado.nextBoolean();
-        operacionesVariable.evaluarCandidato(salarioEntrada,edad,conducir,nombre);
+        operacionesVariable.evaluarCandidato(salarioEntrada,edad,conducir,nombre);*/
+        // operacionesVariable.cambioTipos();
+        operacionesVariable.ejercicioNotion4Tema2();
     }
 }

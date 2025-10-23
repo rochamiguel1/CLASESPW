@@ -1,3 +1,5 @@
+import java.util.Scanner;
+
 public class Operadores {
 
     public void operadoresAritmeticos(){
@@ -76,9 +78,78 @@ public class Operadores {
         System.out.println("El candidato es valido: "+candidatoValido);
     }
 
+    public void cambioTipos(){
+        double numeroDecimal = 5.98;
+        int numeroEntero = 6;
+        double numero = numeroEntero;
+        // System.out.println((int)numeroDecimal);
+        // System.out.println((double) numeroEntero);
+        // System.out.println(numeroEntero);
+        String palabra = "12";
+        int numeroPalabra = Integer.parseInt(palabra);
+
+        String palabraBool = "true";
+        boolean palabraBoolean = Boolean.parseBoolean(palabraBool);
+        // System.out.println(palabraBoolean);
+        // System.out.println(numeroPalabra+10);
+
+        int numeroEvaluar = 12345;
+        String numeroEvaluarStr = String.valueOf(numeroEvaluar);
+
+        boolean acierto = true;
+        String aciertoStr = String.valueOf(acierto); // "true"
+
+    }
     public void evaluarCandidato(double sueldo, int edad, boolean conducir, String nombre){
         boolean resultado = sueldo<=20000 && edad<40 && conducir;
         System.out.println("Evaluando al candidato "+nombre);
         System.out.println("La evaluacion del candadato es: "+resultado);
+    }
+
+    public void ejercicioNotion4Tema2(){
+        /*
+        Desarrolla un programa que pida un número al usuario y
+        determine si es par o impar usando el operador módulo. Muestra el resultado por consola.
+         */
+        Scanner scanner = new Scanner(System.in);
+        System.out.println("Que numero quieres comprobar si es par");
+        int numero = scanner.nextInt();
+        boolean numeroPar = numero%2==0;
+        System.out.printf("El numero %d es par: %b",numero,numeroPar);
+        scanner.close();
+
+
+    }
+
+    public void ejercicioNotion10Tema2(){
+        /*
+        Crea un programa que pida el salario base por hora,
+        las horas trabajadas y si ha hecho horas extra (true/false).
+        Si ha hecho horas extra y trabajó más de 40 horas,
+        las horas que excedan de 40 se pagan al doble.
+        Usa operadores lógicos, relacionales y aritméticos para calcular el salario total.
+         */
+
+        Scanner scanner = new Scanner(System.in);
+        System.out.println("Indica el salario base");
+        int salarioBaseHora = scanner.nextInt();
+        System.out.println("Indica horas trabajadas");
+        int horasTrabajadas = scanner.nextInt();
+        System.out.println("Has realizado horas extas");
+        boolean horasExtras = scanner.nextBoolean();
+        // 60
+        boolean condicionExtras = horasTrabajadas>40 && horasExtras;
+        // si condicionExtras es true
+            int horasExtrasTotal = horasTrabajadas -40;
+            int salarioBase = 40*salarioBaseHora;
+            int salarioBaseExtra = horasExtrasTotal* salarioBaseHora*2;
+            int salarioTotal = salarioBase+salarioBaseExtra;
+            System.out.println("Has cobrado un total de "+salarioTotal);
+            System.out.println("Has cobrado un base de "+salarioBase);
+            System.out.println("Has cobrado un extra de "+salarioBaseExtra);
+
+            // en caso contrario
+        salarioBase = 40*salarioBaseHora;
+
     }
 }
