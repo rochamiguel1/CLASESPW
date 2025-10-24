@@ -1,5 +1,7 @@
 import model.Operaciones;
 
+import java.util.Scanner;
+
 public class Entrada {
 
     public static void main(String[] args) {
@@ -19,12 +21,14 @@ public class Entrada {
         int numero = 2;
         String nombre = "Borja";
         Operaciones operacionesMatematicas = new Operaciones();
-        operacionesMatematicas.sumar(4,7);
-        operacionesMatematicas.sumar(9,4);
-        operacionesMatematicas.sumar(1.0,3.0);
-        operacionesMatematicas.restar(5,8);
-        operacionesMatematicas.restar(5,1);
-
+        // operacionesMatematicas.sumar(4,76);
+        // operacionesMatematicas.restar(5,8);
+        // operacionesMatematicas.restar(5,1);
+        // int resultado2 = operacionesMatematicas.multiplicacion(2,4) *2; // 30
+        Scanner scanner = new Scanner(System.in);
+        System.out.println("Introduce el numero que quieres validar");
+        int numeroUsuario = scanner.nextInt();
+        System.out.println("El numero es valido "+operacionesMatematicas.validarNumero(numeroUsuario));
 
 
     }
